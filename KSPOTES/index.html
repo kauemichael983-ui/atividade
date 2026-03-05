@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>K Sports</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>K Sports</h1>
+    <input type="text" placeholder="Pesquisar...">
+    <nav>
+        <a href="#">Camisas</a>
+
+
+        <a href="#">Calças</a>
+        <a href="#">Tênis</a>
+        <a href="#">Boné</a>
+        <a href="#">Acessórios</a>
+    </nav>
+</header>
+
+<div id="mensagem"></div>
+
+<section>
+    <h2>Camisas</h2>
+    <div class="produtos">
+        <div class="card">
+            <p>Camisa Esportiva</p>
+            <p>R$ 59,90</p>
+            <p>Tamanho: P M G GG</p>
+            <button onclick="comprar()">Comprar</button>
+        </div>
+        <div class="card"><p>Camisa Dry Fit</p><p>R$ 69,90</p><p>P M G GG</p><button onclick="comprar()">Comprar</button></div> 
+        <div class="card"><p>Camisa Treino</p><p>R$ 49,90</p><p>P M G GG</p><button onclick="comprar()">Comprar</button></div>
+        <div class="card"><p>Camisa Time</p><p>R$ 89,90</p><p>P M G GG</p><button onclick="comprar()">Comprar</button></div>
+        <div class="card"><p>Camisa Casual</p><p>R$ 39,90</p><p>P M G GG</p><button onclick="comprar()">Comprar</button></div>
+    </div>
+</section>
+
+<section>
+    <h2>Calças</h2>
+    <div class="produtos">
+        <div class="card"><p>Calça Moletom</p><p>R$ 99,90</p><p>P M G GG</p><button onclick="comprar()">Comprar</button></div>
+        <div class="card"><p>Calça Esportiva</p><p>R$ 119,90</p><p>P M G GG</p><button onclick="comprar()">Comprar</button></div>
+        <div class="card"><p>Calça Slim</p><p>R$ 89,90</p><p>P M G GG</p><button onclick="comprar()">Comprar</button></div>
+        <div class="card"><p>Calça Jogger</p><p>R$ 109,90</p><p>P M G GG</p><button onclick="comprar()">Comprar</button></div>
+        <div class="card"><p>Calça Casual</p><p>R$ 79,90</p><p>P M G GG</p><button onclick="comprar()">Comprar</button></div>
+    </div>
+</section>
+
+<section>
+    <h2>Tênis</h2>
+    <div class="produtos">
+        <div class="card"><p>Tênis Running</p><p>R$ 199,90</p><p>38 39 40 41 42</p><button onclick="comprar()">Comprar</button></div>
+        <div class="card"><p>Tênis Casual</p><p>R$ 149,90</p><p>38 39 40 41 42</p><button onclick="comprar()">Comprar</button></div>
+        <div class="card"><p>Tênis Esportivo</p><p>R$ 179,90</p><p>38 39 40 41 42</p><button onclick="comprar()">Comprar</button></div>
+        <div class="card"><p>Tênis Premium</p><p>R$ 299,90</p><p>38 39 40 41 42</p><button onclick="comprar()">Comprar</button></div>
+        <div class="card"><p>Tênis Básico</p><p>R$ 129,90</p><p>38 39 40 41 42</p><button onclick="comprar()">Comprar</button></div>
+    </div>
+</section>
+
+<section>
+    <h2>Boné</h2>
+    <div class="produtos">
+        <div class="card"><p>Boné Esportivo</p><p>R$ 49,90</p><p>Único</p><button onclick="comprar()">Comprar</button></div>
+        <div class="card"><p>Boné Snapback</p><p>R$ 59,90</p><p>Único</p><button onclick="comprar()">Comprar</button></div>
+        <div class="card"><p>Boné Aba Curva</p><p>R$ 39,90</p><p>Único</p><button onclick="comprar()">Comprar</button></div>
+        <div class="card"><p>Boné Premium</p><p>R$ 79,90</p><p>Único</p><button onclick="comprar()">Comprar</button></div>
+        <div class="card"><p>Boné Casual</p><p>R$ 44,90</p><p>Único</p><button onclick="comprar()">Comprar</button></div>
+    </div>
+</section>
+
+<script>
+function comprar(){
+    let msg = document.getElementById("mensagem");
+    msg.innerHTML = "Produto adicionado ao carrinho!";
+    msg.style.display = "block";
+    setTimeout(() => {
+        msg.style.display = "none";
+    }, 2000);
+}
+
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+body {
+    font-family: Arial;
+    background-color: #f3e8ff;
+    margin: 0;
+}
+
+header {
+    background: purple;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+}
+
+input {
+    padding: 8px;
+    margin: 10px;
+}
+
+section {
+    padding: 20px;
+}
+
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    width: 180px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ccc;
+}
+
+button {
+    background: purple;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#mensagem {
+    display: none;
+    background: green;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
